@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LookBusy_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="installer.msi" Height="450" Width="800" ResizeMode="CanMinimize" Closed="Window_Closed"
+        >
     <Grid>
-
+        <ProgressBar x:Name="installprogress_pb" HorizontalAlignment="Left" Height="25" Margin="10,36,0,0" VerticalAlignment="Top" Width="780" Value="4" Grid.ColumnSpan="2"/>
+        <Label x:Name="installing_lbl" Content="Installing..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Padding="5,5,17,5" Grid.RowSpan="1"/>
+        <Button x:Name="showdetails_btn" Content="Show Details" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="78" Click="showdetails_btn_Click"/>
+        <TextBox x:Name="details_txt" HorizontalAlignment="Left" Margin="10,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" Height="283" IsEnabled="False" Visibility="Hidden" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
+        <Button x:Name="cancel_btn" Content="Cancel" HorizontalAlignment="Left" Margin="701,379,0,0" VerticalAlignment="Top" Width="78" Click="cancel_btn_Click"/>
+        <Button x:Name="back_btn" Content="Back" HorizontalAlignment="Left" Margin="535,379,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False"/>
+        <Button x:Name="cancel_btn_Copy1" Content="Next" HorizontalAlignment="Left" Margin="618,379,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False"/>
     </Grid>
 </Window>
