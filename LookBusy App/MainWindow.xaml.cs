@@ -113,7 +113,7 @@ namespace LookBusy_App
         }
         private void cancel_btn_Click(object sender, RoutedEventArgs e)//if cancel pressed close window
         {
-            MessageBoxResult result = MessageBox.Show("Would you like to canel this install", "Warning", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Would you like to canel this install, it is "+installprogress_pb.Value+"% completed, cancelling now may cause corruption.", "Warning", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
                 Environment.Exit(Environment.ExitCode);
