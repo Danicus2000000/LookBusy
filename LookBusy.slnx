@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LookBusy App/LookBusy App.csproj" />
+  <Project Path="LookBusy/LookBusy.csproj" />
+</Solution>
